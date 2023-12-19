@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendizaje Saludable Juntos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Aprendizaje Saludable Juntos</h1>
+    </header>
+
+    <div class="container">
+        <h2>Agregar imagen</h2>
+        <form action="#result" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group file-input">
+                <label for="foto">Subir Foto:</label>
+                <input type="file" id="foto" name="foto" accept="image/*">
+                <div class="file-name">No se ha seleccionado ninguna foto</div>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <div id="result" class="result-container result-container-fullwidth">
+        <!-- Resultados se agregarán aquí dinámicamente -->
+    </div>
+
+    <footer>
+        <p>&copy; Tania Monreal - Oihan Ramirez - Anniks Tejada - Carla Perez - Verónica Ruiz</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
